@@ -6,8 +6,8 @@ function App() {
   const [ count, setCount] = useState(0);
   const countRef = useRef(0);
   
-  console.log('countRef',countRef)
-  console.log('렌더링 👏')
+  // console.log('countRef',countRef)
+  // console.log('렌더링 👏')
 
 
   const increaseCountState = () =>{
@@ -17,6 +17,8 @@ function App() {
   const increaseCountRef = () => {
     countRef.current = countRef.current + 1;
         // countRef.current += + 1;
+  console.log('countRef.current',countRef.current)
+
   }
 
 
