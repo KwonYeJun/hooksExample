@@ -69,7 +69,7 @@
 //       <button onClick={increaseRef}>increaseRef 올려</button>
 //       <button onClick={increaseNumber}>increaseNumber 올려</button>
 //       <button onClick={doRenderIng}>doRenderIng 렌더링</button>
-  
+
 //     </div>
 //   );
 // }
@@ -99,28 +99,28 @@
 //     <div className="App">
 //       <p>{count}</p>
 //       <button onClick={exampleState}>exampleState</button>
-  
+
 //     </div>
 //   );
 // }
 
 // export default App;
 
-import React, { useState, useRef ,useEffect} from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 
 import './App.css';
 
 function App() {
   const [count, SetCount] = useState(1)
-  const [renderCount , setrenderCount] = useState(0);
+  const [renderCount, setrenderCount] = useState(0);
 
-  // useEffect(() =>{
-  //   setrenderCount(renderCount + 1);
-  //   console.log(renderCount);
-  // });
+  useEffect(() => {
+    setrenderCount(renderCount + 1);
+    console.log(renderCount);
+  });
 
-  const exampleState = () =>{
-    SetCount(count +1);
+  const exampleState = () => {
+    SetCount(count + 1);
   }
 
 
@@ -128,7 +128,7 @@ function App() {
     <div className="App">
       <p>{count}</p>
       <button onClick={exampleState}>exampleState</button>
-  
+
     </div>
   );
 }
