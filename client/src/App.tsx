@@ -45,7 +45,10 @@ function App() {
   const countRef = useRef(0);
   let countNumber = 0;
 
-  
+  const doRenderIng = () =>{
+    SetCount(count +1)
+  }
+
   const increaseRef = () => {
     countRef.current += 1; // countRef.current의 값이 + 1씩 증가 한다.
     console.log('countRef.current: ', countRef.current)
@@ -65,7 +68,8 @@ function App() {
       <p>Number: {countNumber}</p>
       <button onClick={increaseRef}>increaseRef 올려</button>
       <button onClick={increaseNumber}>increaseNumber 올려</button>
-
+      <button onClick={doRenderIng}>doRenderIng 렌더링</button>
+  
     </div>
   );
 }
