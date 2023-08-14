@@ -140,12 +140,21 @@ import React, { useState, useRef, useEffect } from 'react';
 import './App.css';
 
 function App() {
+  const inputRef = useRef<HTMLInputElement>(null);;
+  useEffect(() => {
 
+    console.log(inputRef);
+    inputRef.current?.focus();
+  },[])
 
+const create = () =>{
+  alert('삐빅 닉네임이 너무 이뻐요.😉')
+  inputRef.current?.focus();
+}
   return (
     <div className="App">
-      <input type="text" placeholder='userNicname' />
-      <button>생성</button>
+      <input ref={inputRef} type="text" placeholder='userNicname' />
+      <button onClick={create}>생성</button>
     </div>
   );
 }
