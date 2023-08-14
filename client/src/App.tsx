@@ -144,7 +144,8 @@ function App() {
 
   return (
     <div className="App">
-  
+      <input type="text" placeholder='userNicname' />
+      <button>생성</button>
     </div>
   );
 }
