@@ -106,29 +106,45 @@
 
 // export default App;
 
+// import React, { useState, useRef, useEffect } from 'react';
+
+// import './App.css';
+
+// function App() {
+//   const [count, SetCount] = useState(1)
+//   const [renderCount, setrenderCount] = useState(0);
+
+//   useEffect(() => {
+//     setrenderCount(renderCount + 1);
+//     console.log(renderCount);
+//   });
+
+//   const exampleState = () => {
+//     SetCount(count + 1);
+//   }
+
+
+//   return (
+//     <div className="App">
+//       <p>{count}</p>
+//       <button onClick={exampleState}>exampleState</button>
+
+//     </div>
+//   );
+// }
+
+// export default App;
+
 import React, { useState, useRef, useEffect } from 'react';
 
 import './App.css';
 
 function App() {
-  const [count, SetCount] = useState(1)
-  const [renderCount, setrenderCount] = useState(0);
-
-  useEffect(() => {
-    setrenderCount(renderCount + 1);
-    console.log(renderCount);
-  });
-
-  const exampleState = () => {
-    SetCount(count + 1);
-  }
 
 
   return (
     <div className="App">
-      <p>{count}</p>
-      <button onClick={exampleState}>exampleState</button>
-
+  
     </div>
   );
 }
